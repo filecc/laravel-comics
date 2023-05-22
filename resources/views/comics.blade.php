@@ -1,7 +1,7 @@
 @extends('layouts.general')
 
 @section('content')
-<main class="bg-fg-body text-white position-relative h-100 py-4">
+<main class="bg-fg-dark text-white position-relative h-100 py-4">
     <div class="h-100">
         <p class="comicsHeader bg-primary position-absolute top-0 left-0 py-1 px-2 text-uppercase fs-4">current series</p>
         <div class="container py-4">

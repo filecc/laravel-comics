@@ -12,7 +12,7 @@ $primary: $fg-primary;
 // adding custom colors
 $custom-colors: (
     // custom color
-    "fg-body": $fg-dark,
+    "fg-dark": $fg-dark,
 
 );
 // Merge the maps of colors
@@ -75,4 +75,35 @@ main {
 .footer-icon{
     max-height: 50px;
     object-fit: contain;
+}
+
+.footerBg{
+    background-image: url('/images/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    .footerBg{
+        overflow: hidden;
+        position: relative;
+        li{
+            font-size: 12px;
+            &:hover{
+                color: $fg-primary !important;
+                cursor: pointer;
+            }
+        }
+    }
+
+    small{
+        font-size: 12px;
+    }
+
+    .footer-logo{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-25%, -20%);
+    }
 }
