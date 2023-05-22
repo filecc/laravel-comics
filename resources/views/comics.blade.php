@@ -1,5 +1,24 @@
 @extends('layouts.general')
 
 @section('content')
-<div>COMICS</div>
+<main class="bg-fg-body text-white position-relative h-100 py-4">
+    <div class="h-100">
+        <p class="comicsHeader bg-primary position-absolute top-0 left-0 py-1 px-2 text-uppercase fs-4">current series</p>
+        <div class="container py-4">
+            <div class="row flex-wrap">
+                @foreach ($products as $product)
+                <div class="col-2 p-3 mb-4">
+                    <img class="img-fluid h-100 thumb" src="{{$product['thumb']}}" alt="{{$product['title']}}">
+                    <h6 class="text-uppercase py-2">
+                        {{$product['series']}}
+                    </h6>
+                </div>
+
+            @endforeach
+
+            </div>
+        </div>
+
+    </div>
+</main>
 @endsection

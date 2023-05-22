@@ -18,7 +18,5 @@
             </div>
         </div>
     </div>
-    <div class="header-bg">
-
-    </div>
+    <div class="header-bg"></div>
 </header>

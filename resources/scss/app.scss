@@ -11,7 +11,8 @@ $primary: $fg-primary;
 
 // adding custom colors
 $custom-colors: (
- // custom color "fg-body": $fg-body,
+    // custom color
+    "fg-body": $fg-dark,
 
 );
 // Merge the maps of colors
@@ -22,28 +23,51 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/bootstrap";
 
+.layoutContainer {
+    min-height: 100dvh;
+    min-width: 100%;
+}
 
-header{
-    img{
+header {
+    img {
         max-height: 60px;
     }
-    .header-bg{
+
+    .header-bg {
         background-image: url('/images/jumbotron.jpg');
         min-height: 350px;
         background-size: cover;
     }
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
-    &:hover{
+
+    &:hover {
         color: $fg-primary;
     }
-    &.active{
+
+    &.active {
         color: $fg-primary;
     }
 }
-ul{
+
+ul {
     list-style: none;
+}
+
+main {
+    flex-grow: 1;
+    height: 100%;
+    width: 100% !important;
+    position: relative;
+}
+
+.comicsHeader {
+    transform: translate(10%, -50%);
+}
+
+.thumb{
+    object-fit: cover;
 }

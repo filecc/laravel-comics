@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    @include('partials.header')
-    <main>
-        @yield('content')
-    </main>
-    @include('partials.footer')
+    <div class="d-flex flex-column layoutContainer">
+        @include('partials.header')
+            @yield('content')
+        @include('partials.footer')
+    </div>
 </body>
 
 </html>
