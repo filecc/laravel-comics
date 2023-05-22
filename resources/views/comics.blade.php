@@ -6,12 +6,11 @@
         <p class="comicsHeader bg-primary position-absolute top-0 left-0 py-1 px-2 text-uppercase fs-4">current series</p>
         <div class="container py-4">
             <div class="row flex-wrap">
-                @foreach ($products as $product)
+                @foreach ($comics as $comic)
                 <div class="col-2 p-3 mb-4">
-                    <img class="img-fluid h-100 thumb" src="{{$product['thumb']}}" alt="{{$product['title']}}">
-                    <h6 class="text-uppercase py-2">
-                        {{$product['series']}}
-                    </h6>
+                    <img class="img-fluid h-100 thumb" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                    <a class="text-uppercase py-2" href="{{route('comic.show', $comic['index'])}}"> {{$comic['series']}}</a>
+
                 </div>
 
             @endforeach

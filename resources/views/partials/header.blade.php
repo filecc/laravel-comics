@@ -3,7 +3,7 @@
         <div class="row w-100">
             <div class="col-1 p-2">
                 <a href="{{route('home')}}">
-                    <img class="img-fluid" src="images/dc-logo.png" alt="logo">
+                    <img class="img-fluid" src="/images/dc-logo.png" alt="logo">
                 </a>
 
             </div>
