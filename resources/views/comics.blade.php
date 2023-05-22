@@ -18,7 +18,9 @@
 
             </div>
         </div>
-
+        <div class="text-center py-3">
+            <button class="btn btn-primary text-uppercase rounded-0 text-white fw-bold px-5">load more</button>
+        </div>
     </div>
 </main>
 @endsection
