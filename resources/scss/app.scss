@@ -2,12 +2,12 @@
 
 
 /* BOOTSTRAP IMPORT */
-@import "bootstrap/scss/functions";
+@import "~bootstrap/scss/functions";
 
 // variables override
 $primary: $fg-primary;
 
-@import "bootstrap/scss/variables";
+@import "~bootstrap/scss/variables";
 
 // adding custom colors
 $custom-colors: (
@@ -18,10 +18,10 @@ $custom-colors: (
 // Merge the maps of colors
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/bootstrap";
 
 .layoutContainer {
     min-height: 100dvh;

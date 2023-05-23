@@ -10,7 +10,6 @@
                 <div class="col-2 p-3 mb-4">
                     <img class="img-fluid h-100 thumb" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                     <a class="text-uppercase py-2" href="{{route('comic.show', ['id' => $loop->index, 'title' => $comic['title']])}}"> {{$comic['series']}}</a>
-
                 </div>
 
             @endforeach
